@@ -1,0 +1,41 @@
+<script>
+function myFunction() {
+    alert("This might work");
+}
+</script>
+
+<?php
+
+function pet_menu(){
+    $items = array();
+    $items['my_favorite_pet'] = array(
+        'title' => "My Favorite Pet",
+        'page callback' => 'get_pet_info',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+  return $items;
+}
+
+function get_pet_info() {
+    return "<h2>Otto</h2></br>
+    <button onclick='myFunction()'>Click me</button>
+
+
+    <a href='pet'><img src='/sites/images/pet.jpg' alt='pet picture' height='200' width='200'></a>";
+}
+
+
+/*
+Create a module called pet. It should create a menu item
+leading to a page about your favorite pet (living, dead or fictional). Include an image and a link
+to an external page with information about your type of pet.
+
+Include an image and a link to an external page with
+information about your type of pet.
+*/
+
+// <button onclick="myFunction()">Click me</button>
+
+
+// <img src='https://s-media-cache-ak0.pinimg.com/736x/61/22/cb/6122cb371a319afa82c5d4e8077ebbdc.jpg' alt = 'pug'></img>
