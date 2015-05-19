@@ -19,7 +19,7 @@ function pet_menu(){
 
 function get_pet_info() {
     return "<h2>Otto</h2></br>
-    <h4>Otto is a black pug.  He is very friendly, and is happiest when he's curled up in someone's lap.
+    <h4>Otto is a beautiful black pug.  He is very friendly, and is happiest when he's curled up in someone's lap.
     <button onclick='myFunction()'>Click me</button>
 
 
